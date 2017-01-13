@@ -1,12 +1,23 @@
 <html>
+
 <head>
-<title>テストタイトル</title>
-<script src="processing.js"></script>
+  <title>テストタイトル</title>
+  <script src="processing.js"></script>
+  <script src="brython.js"></script>
+  <script src="brython_stdlib.js"></script>
 </head>
 
-<body>
-ハローワールド
+<body onload="brython()"> ハローワールド
 <canvas data-processing-sources="processing.pde"></canvas>
+<script type="test/python" src="omikuji.py"></script>
+<div class="main_area">
+  <h1>簡単おみくじ</h1>
+  <a href="#" id="submit_button">おみくじを引く</a>
+  <div id="result"></div>
+  <h2>説明</h2>
+  <p>「おみくじを引く」をクリックしてください。するとおみくじの結果が表示されます。</p>
+  <h2>注意点</h2>
+</div>
 </body>
 
 </html>
